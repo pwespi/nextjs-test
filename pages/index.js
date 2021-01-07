@@ -1,7 +1,11 @@
+import { BleClient } from "@capacitor-community/bluetooth-le"
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const ble = async () => {
+    await BleClient.initialize()
+  }
   return (
     <div className={styles.container}>
       <Head>
