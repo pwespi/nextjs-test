@@ -1,10 +1,11 @@
-import { BleClient } from "@capacitor-community/bluetooth-le"
+import { BleClient } from "@capacitor-community/bluetooth-le/dist"
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const ble = async () => {
     await BleClient.initialize()
+    await BleClient.requestDevice()
   }
   return (
     <div className={styles.container}>
@@ -17,6 +18,9 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <div>
+          <button onClick={() => ble()}>BLE</button>
+        </div>
 
         <p className={styles.description}>
           Get started by editing{' '}
