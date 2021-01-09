@@ -1,0 +1,13 @@
+{
+  "appId": "com.nextjstest",
+  "appName": "nextjs-test",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "out",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

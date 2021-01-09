@@ -5,10 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "build:sync": "next build && next export && cap sync android"
   },
   "dependencies": {
-    "@capacitor-community/bluetooth-le": "0.1.0-15-ge63b6a9",
+    "@capacitor-community/bluetooth-le": "0.1.0-16-g254b391",
+    "@capacitor/android": "^2.4.5",
+    "@capacitor/cli": "^2.4.5",
     "@capacitor/core": "^2.4.5",
     "next": "10.0.5",
     "react": "17.0.1",
