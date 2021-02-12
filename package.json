@@ -10,7 +10,7 @@
     "build:sync": "next build && next export && cap sync android"
   },
   "dependencies": {
-    "@capacitor-community/bluetooth-le": "0.1.0-16-g254b391",
+    "@capacitor-community/bluetooth-le": "^0.1.2",
     "@capacitor/android": "^2.4.5",
     "@capacitor/cli": "^2.4.5",
     "@capacitor/core": "^2.4.5",
